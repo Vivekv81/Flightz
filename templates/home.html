@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flight Search | Flight Comparison</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body class="flight-bg">
+
+    <header class="navbar">
+
+        <div class="logo">
+            FlightFinder
+        </div>
+
+        <nav>
+            <ul>
+                <li class="active">Flights</li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <div class="hero-section">
+
+        <h1>
+            Search and Compare Flight Deals
+        </h1>
+
+        <div class="search-box">
+
+            <select id="origin">
+                <option value="">From</option>
+                <option value="DELHI">Delhi</option>
+                <option value="MUMBAI">Mumbai</option>
+                <option value="GOA">Goa</option>
+                <option value="BANGALORE">Bangalore</option>
+            </select>
+
+
+            <select id="destination">
+                <option value="">To</option>
+                <option value="DELHI">Delhi</option>
+                <option value="MUMBAI">Mumbai</option>
+                <option value="GOA">Goa</option>
+                <option value="BANGALORE">Bangalore</option>
+            </select>
+
+
+            <input
+                type="date"
+                id="date"
+            >
+
+
+            <button onclick="searchFlights()">
+                Search Flights
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="container">
+
+        <h2>
+            Available Flights
+        </h2>
+
+        <div id="results"></div>
+
+    </div>
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

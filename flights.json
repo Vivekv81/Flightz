@@ -1,0 +1,23 @@
+[
+    {
+        "origin": "GOA",
+        "destination": "PUNE",
+        "date": "2025-03-10",
+        "price": 250,
+        "airline": "American Airlines"
+    },
+    {
+        "origin": "GOA",
+        "destination": "PUNE",
+        "date": "2025-03-10",
+        "price": 245,
+        "airline": "Delta Airlines"
+    },
+    {
+        "origin": "GOA",
+        "destination": "MUMBAI",
+        "date": "2025-03-11",
+        "price": 300,
+        "airline": "United Airlines"
+    }
+]

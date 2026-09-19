@@ -1,0 +1,317 @@
+/* ============================================================
+   GENERAL RESET
+   ============================================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* ============================================================
+   FLIGHT HOMEPAGE
+   ============================================================ */
+
+body.flight-bg {
+    min-height: 100vh;
+    background: url('images/homi.jpg') no-repeat center center / cover;
+    background-attachment: fixed;
+}
+
+
+/* ============================================================
+   NAVBAR
+   ============================================================ */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #00447c;
+    color: white;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.navbar .active {
+    background: #007bff;
+    border-radius: 5px;
+}
+
+
+/* ============================================================
+   HERO SECTION
+   ============================================================ */
+
+.hero-section {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-section h1 {
+    margin-bottom: 25px;
+}
+
+
+/* ============================================================
+   SEARCH BOX
+   ============================================================ */
+
+.search-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Inputs + Selects + Search Button */
+
+.search-box input,
+.search-box select,
+.search-box button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+/* Dropdown */
+
+.search-box select {
+    background: white;
+    min-width: 140px;
+    cursor: pointer;
+}
+
+
+/* Search Button */
+
+.search-box button {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-box button:hover {
+    background: #0056b3;
+}
+
+
+/* ============================================================
+   RESULTS SECTION
+   ============================================================ */
+
+.container {
+    padding: 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.95);
+    min-height: 50vh;
+}
+
+.container h2 {
+    color: #00447c;
+    margin-bottom: 10px;
+}
+
+
+/* Results Layout */
+
+#results {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+/* ============================================================
+   FLIGHT CARD
+   ============================================================ */
+
+.flight-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    transition: 0.3s;
+    text-align: left;
+}
+
+.flight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 7px 14px rgba(0, 0, 0, 0.25);
+}
+
+.flight-card p {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.flight-card p:first-child {
+    color: #00447c;
+    font-size: 18px;
+}
+
+
+/* ============================================================
+   LOGIN PAGE
+   ============================================================ */
+
+body.login-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('images/logon.jpg') no-repeat center center / cover;
+}
+
+
+/* ============================================================
+   LOGIN BOX
+   ============================================================ */
+
+.login-container {
+    width: 350px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+
+/* ============================================================
+   WELCOME TEXT
+   ============================================================ */
+
+.welcome-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+
+/* ============================================================
+   SUBTEXT
+   ============================================================ */
+
+.subtext {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+
+/* ============================================================
+   LOGIN INPUT FIELDS
+   ============================================================ */
+
+.login-container input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+
+/* ============================================================
+   LOGIN BUTTON
+   ============================================================ */
+
+.login-container button {
+    padding: 10px 20px;
+    width: 100%;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-container button:hover {
+    background: #90ee90;
+    transform: scale(1.05);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-container button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ============================================================
+   LOGIN ERROR
+   ============================================================ */
+
+#error-message {
+    margin-top: 10px;
+    color: red;
+}
+
+
+/* ============================================================
+   MOBILE RESPONSIVENESS
+   ============================================================ */
+
+@media (max-width: 700px) {
+
+    .search-box {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .search-box input,
+    .search-box select,
+    .search-box button {
+        width: 100%;
+    }
+
+    .hero-section {
+        height: auto;
+        padding: 60px 0;
+    }
+
+    .flight-card {
+        width: 90%;
+    }
+}
